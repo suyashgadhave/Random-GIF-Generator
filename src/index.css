@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.background {
+  background-image: radial-gradient(#ffffff 2.5px, transparent 2.5px), radial-gradient(#ffffff 2.5px, transparent 2.5px);
+  background-size: 66px 36px;
+  background-position: 0 0, 18px 18px;
+  background-color: #6fd1ff;
+}
+
+.spinner {
+   width: 56px;
+   height: 56px;
+   border-radius: 50%;
+   background: radial-gradient(farthest-side,#b1d2ff 94%,#0000) top/9px 9px no-repeat,
+          conic-gradient(#0000 30%,#b1d2ff);
+   animation: spinner-c7wet2 1s infinite linear;
+
+}
+
+@keyframes spinner-c7wet2 {
+   100% {
+      transform: rotate(1turn);
+   }
+}
